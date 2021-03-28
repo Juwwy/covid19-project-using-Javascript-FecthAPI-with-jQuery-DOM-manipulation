@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    margin: 0 auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: palegreen;
+    /* color:rgb(155, 24, 24); */
+    
+    
+}
+
+nav{
+    border-bottom: 3px solid orangered;
+    /* height:80px; */
+    position: fixed;
+    background-color: rgba(0,0,0,0.95);
+}
+
+.main .img-slid .slider{
+    background-image:url(../images/covid1.jpg);
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 600px;
+    text-align: center;
+    padding:10px;
+    margin-top: 20px;
+    color: rgb(102, 6, 22);
+
+    
+}
+
+.hidden{
+    display: none;
+}
+.main .img-slid .slider {
+    background-color: rgba(0,0,0,0.2);
+}
+
+.main .img-slid .slider .head-content{
+    position: relative;
+    top: 250px;
+    z-index: 9;
+
+}
+
+.tabset {
+    color:cornsilk;
+    background-color: rgb(102, 6, 22); ;
+    margin-top: 15px;
+    height: 350px;
+}
+.tabset table{
+    margin-top: 5px;
+    color:cornsilk;
+    
+    margin:0;
+    
+}
+.country-tab{
+    font-size: 12px;
+}
+.country-tab .inner-tab{
+    border: cornsilk 2px solid;
+}
+.naija1{
+    background-color: crimson;
+    
+}
+
+.naija{
+    background-color: crimson;
+    color:cornsilk;
+    height:300px;
+}
+
+.naija table{
+    color: cornsilk;
+}
+.naija .sick-bee{
+    padding:10px;
+    margin-top: 5px;
+    height:300px;
+    border-radius:50%;
+    box-shadow: rgba(0,0,0,0.5) 4px 4px 4px 4px;
+}
+.naija .sick-bee:hover{
+    transform: translateY(20px)
+}
+
+.footer{
+    background-color:rgb(102, 6, 22) ;
+    color:cornsilk;
+    text-align: center;
+}
+.footer h2{
+    padding:10px;
+}
+.footer .foot-link a{
+    text-decoration: none;
+    list-style-type: decimal-leading-zero;
+    color:cornsilk;
+}
