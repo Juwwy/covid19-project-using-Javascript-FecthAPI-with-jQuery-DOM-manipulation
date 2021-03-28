@@ -42,7 +42,7 @@ $(document).ready(function(){
 
             $('td span.n1').html(naijaUpd.TotalConfirmed);
             $('td span.n2').html(naijaUpd.TotalDeaths);
-            $('td span.3').html(naijaUpd.TotalRecovered);
+            $('td span.n3').html(naijaUpd.TotalRecovered);
             $('td span.n4').html(naijaUpd.NewDeaths);
             $('td span.n5').html(naijaUpd.NewConfirmed);
             $('td span.n6').html(naijaUpd.NewRecovered);
