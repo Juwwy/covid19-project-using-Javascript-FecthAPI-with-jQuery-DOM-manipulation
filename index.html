@@ -10,6 +10,7 @@
     
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/fontawesome-all.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.css">
     <link rel="stylesheet" href="css/fontawesome.min.css">
     <link rel="stylesheet" href="css/custom.css">
 </head>
@@ -101,11 +102,31 @@
                   <!-------------Alll Country Affected Session----------->
       
       <section id="country" class="container-fluid">
-        <section class="container country-tab mt-4">
-          <div class="row">
+        <section  class="container country-tab mt-4">
+          <div  class="row">
             <div class="col-md-12 col-sm-6 country">
-             
+              <table id="myTable" class="table table-bordered inner-tab border-primary table-hover table-responsive{-sm|-md|-lg|-xl|-xxl}">
+                <thead class="borderless">
+                          <tr>
+                            <th colspan="7" class="text-center"><h1>Covid-19 Affected Countries Records</h1></th>
+                          </tr>
+                          <tr>
+                            <th>Countries</th>
+                            <th>Total Confirmed</th>
+                            <th>Total Deaths</th>
+                            <th>Total Recovered</th>
+                            <th>New Deaths</th>
+                            <th>New Confirmed</th>
+                            <th>New Recovered</th>
+                            
+                          </tr>
+                          
+                </thead>
 
+
+                <tbody>
+                </tbody>
+                </table>
 
             </div>
 
@@ -208,6 +229,7 @@
      
 
     <script src="js/jquery.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.js"></script>
     <script src="js/fontawesome.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>

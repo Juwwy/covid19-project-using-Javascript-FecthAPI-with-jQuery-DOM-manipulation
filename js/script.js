@@ -35,8 +35,12 @@ $(document).ready(function(){
             $('td span.g6').html(newUpd.NewRecovered);
 
             const countryUpdate = data.Countries
-         
-            $('div.country').html(CountryTable(countryUpdate));
+            $(document).ready( function () {
+                $('#myTable').DataTable();
+            } );
+            $('div.country').html(function(){
+                $('#myTable').append(CountryTable(countryUpdate))
+            });
 
             const naijaUpd = data.Countries[125]
 
@@ -55,29 +59,29 @@ $(document).ready(function(){
     let stringify;
 
     function CountryTable(country){
-         stringify =`
+    //      stringify =`
        
-       <div class="col-md-12">
-       <table class="table table-bordered inner-tab border-primary table-hover table-responsive{-sm|-md|-lg|-xl|-xxl}">
-       <thead class="borderless">
-                 <tr>
-                   <th colspan="7" class="text-center"><h1>Covid-19 Affected Countries Records</h1></th>
-                 </tr>
-                 <tr>
-                   <th>Countries</th>
-                   <th>Total Confirmed</th>
-                   <th>Total Deaths</th>
-                   <th>Total Recovered</th>
-                   <th>New Deaths</th>
-                   <th>New Confirmed</th>
-                   <th>New Recovered</th>
+    //    <div class="col-md-12">
+    //    <table  class="table table-bordered inner-tab border-primary table-hover table-responsive{-sm|-md|-lg|-xl|-xxl}">
+    //    <thead class="borderless">
+    //              <tr>
+    //                <th colspan="7" class="text-center"><h1>Covid-19 Affected Countries Records</h1></th>
+    //              </tr>
+    //              <tr>
+    //                <th>Countries</th>
+    //                <th>Total Confirmed</th>
+    //                <th>Total Deaths</th>
+    //                <th>Total Recovered</th>
+    //                <th>New Deaths</th>
+    //                <th>New Confirmed</th>
+    //                <th>New Recovered</th>
                    
-                 </tr>
+    //              </tr>
                  
-       </thead>
-       <tbody>
+    //    </thead>
+    //    <tbody>
        
-       `;
+    //    `;
        //Loop section
 
        for(const [i, count] of country.entries() )
@@ -96,16 +100,18 @@ $(document).ready(function(){
        
 
        }
-        stringify +=`
-        </tbody>
-        </table>
-        </div>
+        // stringify +=`
+        // </tbody>
+        // </table>
+        // </div>
         
-        `;
+        // `;
         return stringify;
         
 
     } 
+
+    
 
 
 
